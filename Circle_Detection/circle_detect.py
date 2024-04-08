@@ -27,7 +27,7 @@ def main(argv):
    param1=100, param2=30,
    minRadius=1, maxRadius=30)
    
-   
+   # Outline detected circles using their centers and radii
    if circles is not None:
       circles = np.uint16(np.around(circles))
       for i in circles[0, :]:
@@ -38,7 +38,7 @@ def main(argv):
          radius = i[2]
          cv.circle(src, center, radius, (255, 0, 255), 3)
    
-   
+   # Show image with drawn circles
    cv.imshow("detected circles", src)
    cv.waitKey(0)
    
