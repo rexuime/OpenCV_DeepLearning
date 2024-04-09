@@ -30,5 +30,5 @@ There are also examples of the resulting images from executing the code in this 
 A general example of training a deep learning network. Is a very simple example and doesn't show much. Includes an example image of the digits used from MNIST
 as well as an example image of the training results.
 
-There are two different Python files that do basically the same thing.
+There are two different Python files that do basically the same thing except one has a baseline to start with while learning and another isn't given one at all. This makes the file 'with_baseline' start with a MUCH high accuracy (around 90%) during training and end with an almost 100% accuracy. The 'no_baseline' file starts with a very low accuracy (10% for the tests I ran) but learns fairly quickly (ending with around 70-80% in most cases in my tests).
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
